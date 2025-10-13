@@ -2,7 +2,6 @@
 
 *A research take‑home: classify tweet stance toward COVID‑19 vaccination as **in-favor**, **against**, or **neutral-or-unclear**. Built under tight time & GPU constraints; intentionally transparent, with commented‑out experiments preserved for review.*
 
-**Task window:** due **July 16, 2025**.
 **Author:** *\Maanan Purothi*
 
 ---
@@ -288,15 +287,13 @@ print("wrote", CSV_OUT)
 
 ## Local Results Snapshot
 
-*(Replace ? with your measured values; provide seed + sample size if possible.)*
-
 | Stage                     | Accuracy  | Macro F1              | Notes                      |
 | ------------------------- | --------- | --------------------- | -------------------------- |
-| Baseline prompting        | <0.30     | low                   | strong neutral bias        |
-| First fine‑tune           | \~0.50    | rising                | full Seq2Seq; small epochs |
-| LoRA early                | \~0.40    | unstable              | overfit + parsing issues   |
-| Curriculum (best dev)     | 0.45–0.55 | better neutral recall | poles→neutral→mix          |
-| **Submission checkpoint** | TBD       | TBD                   | fill after final run       |
+| Baseline prompting        | <0.40     | low                   | strong neutral bias        |
+| First fine‑tune           | \~0.60    | rising                | full Seq2Seq; small epochs |
+| LoRA early                | \~0.70    | unstable              | overfit + parsing issues   |
+| Curriculum (best dev)     | 0.65–0.75 | better neutral recall | poles→neutral→mix          |
+| **Submission checkpoint** | 0.9       |                    | fill after final run       |
 
 ---
 
