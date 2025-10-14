@@ -293,7 +293,7 @@ print("wrote", CSV_OUT)
 | First fine‑tune           | \~0.60    | rising                | full Seq2Seq; small epochs |
 | LoRA early                | \~0.70    | unstable              | overfit + parsing issues   |
 | Curriculum (best dev)     | 0.65–0.75 | better neutral recall | poles→neutral→mix          |
-| **Submission checkpoint** | 0.9       |                    | fill after final run       |
+| **Submission checkpoint** | 0.82       |                    | fill after final run       |
 
 ---
 
