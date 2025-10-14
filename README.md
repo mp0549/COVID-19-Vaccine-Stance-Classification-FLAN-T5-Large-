@@ -345,8 +345,6 @@ Sentence embeddings + logistic regression. Strong sanity check; out of scope for
 
 ## What to Look For When Reviewing
 
-If you’re evaluating this repo for the research assessment, here’s where to focus:
-
 * **Readable, commented notebooks** that show real iteration (failures included).
 * **Clear training path**: poles → neutral → mixed (curriculum).
 * **Resource awareness**: 8‑bit load, LoRA adapters, small batch gradient accumulation.
